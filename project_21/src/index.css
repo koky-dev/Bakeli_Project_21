@@ -1,5 +1,6 @@
-body {
+* {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,14 +12,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-body {
-  margin: 0;
-  font-family: 'Ubuntu', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -26,9 +19,13 @@ code {
 }
 
 /*
+
+
 ===========
-Login page
+Login & Register page
 ===========
+
+
 */
 
 input {
@@ -392,4 +389,265 @@ main {
 .fa-signIn {
   position: relative;
   padding: 0px 10px 2px 0px;
+}
+
+
+
+/*
+
+
+===========
+Admin's Home page
+===========
+
+
+*/
+
+.test{
+  transform: scale(0.3);
+  color: rgba(255,168,115,255);
+}
+
+.sidebar{
+  height: 100vh;
+  position: fixed;
+  background: #004a55;
+}
+
+.sidebar img{
+  width: 90px;
+  height: 90px;
+}
+
+.nav-icon{
+  width: 80px;
+  margin: 5px;
+  background-color: transparent;
+}
+
+.sidebar li{
+  list-style-type:none;
+}
+
+.sidebar li a{
+  text-decoration:none;
+  color: gray;
+}
+
+.center-icons{
+  margin-top: 150px;
+}
+
+.center-icons li{
+  margin-bottom: 5px;
+  width: 50px;
+  margin-left: 13px;
+  justify-content: center;
+}
+/*
+.active{
+  color: #fff;
+  background-color: #333333;
+}
+*/
+.logout{
+  margin-left: 30px;
+}
+
+/* 
+  Main componet
+*/
+
+.main{
+  background: #f8f8f8;
+  margin: 0;
+}
+
+.header{
+  display: flex;
+  width: 95%;
+  margin: 20px auto;
+}
+
+.search_container{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.header_searchbar{
+  width: 35%;
+  height: 120%;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.header_searchbar input{
+  width: 100%;
+}
+
+.header_searchbar .search_icon{
+  justify-content: end;
+  color: #999999;
+}
+
+.searchbutton a{
+  width: 100%;
+  background: #fff;
+  padding: 2px 16px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+
+/* 
+  Courses
+
+  .courses_header{
+  display: flex;
+  margin-left: 10px;
+}
+*/
+
+.courses{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.courses_header h4{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.courses_header span{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.courses_main div{
+  margin-bottom: 10px;
+}
+
+
+/* 
+    One Course
+  */
+
+  .point_icon{
+    font-size: small;
+  }
+
+  .oneCourse_container{
+    height: 100px;
+    border-radius: 8px;
+  }
+
+  .oneCourse_container .oneCourse_details{
+    height: 85%;
+    margin-left: 5px;
+  }
+
+
+  .oneCourse_container .oneCourse_details .img_container{
+    height: 100%;
+    border-radius: 10px;
+    margin: auto 0;
+  }
+
+  
+
+  .oneCourse_container .oneCourse_details .img_container img{
+    height: 90%;
+    width: 90%;
+  }
+
+  .oneCourse_container .oneCourse_details .course_title{
+    text-align: left;
+    margin: auto 0;
+  }
+
+  .oneCourse_container .oneCourse_details .time{
+    text-align: left;
+    margin: auto;
+  }
+
+
+
+/*
+  Teacher
+*/
+
+.teacher{
+  background: transparent;
+}
+
+.teacher_details .teacher_img{
+  border-radius: 6px;
+}
+
+.teacher_details .teacher_name{
+  text-align: left;
+  margin: auto;
+}
+
+.teacher_details .teacher_name p{
+  text-align: left;
+  margin: auto;
+  color: rgba(250,183,6,255);
+  font-size: 10px;
+}
+
+
+/***
+  Right Side
+  *****
+
+****/
+
+.about_card{
+  border-radius: 8px;
+  text-align: left;
+  width: 120px;
+  height: 120px;
+}
+
+
+
+.navbar .nav-link{
+  color: #fff !important;
+  text-align: center;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active{
+  color: #d82c2e !important;
+  background: #fff !important;
+}
+
+/* 
+  Actions 
+*/
+
+
+.main2{
+  height: 100vh;
+  background: #f8f8f8;
+}
+
+.shadow-sm{
+  width: 150px;
+}
+
+.buttons{
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  list-style-type: none;
+  float: left;
+  margin-left: 22px;
 }
